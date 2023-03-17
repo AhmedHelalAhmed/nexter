@@ -1,5 +1,34 @@
 .realtors {
   background-color: $color-secondary;
   grid-column: col-start 7 / full-end;
+  padding: 3rem;
+
+  // to center content
+  display: grid;
+  align-content: center;
+  justify-content: center;
+  grid-row-gap: 2rem; // add spaces
+  justify-items: center; // to center the title top 3 realtors
+
+  &__list {
+    display: grid;
+    grid-template-columns: min-content max-content;
+    grid-column-gap: 2rem;
+    grid-row-gap: 5vh;
+    align-items: center; //vertically
+  }
+
+  &__img {
+    //width: 100%;
+    width: 7rem;
+    border-radius: 50%; // to make it rounded
+    display: block; // always make the image block
+  }
+
+  &__sold {
+    text-transform: uppercase;
+    color: $color-grey-light-2;
+    margin-top: -3px; // to use transform
+  }
 
 }
