@@ -43,8 +43,8 @@ body {
   grid-template-columns: [sidebar-start] 8rem [sidebar-end full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end]; // it should be adapt the view port but not less than the min-content then the min is min-content and max is 14 rem
   // to center the 8 columns we add 1fr and 1fr before and after them
   // minmax(6rem, 1fr) => to ensure that there is space of 6 rem in both side
-  & > * {
-    padding: 40px;
-    font-size: 3rem;
-  }
+  //& > * { //just for test
+  //  padding: 40px;
+  //  font-size: 3rem;
+  //}
 }
