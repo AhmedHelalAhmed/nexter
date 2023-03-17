@@ -33,3 +33,11 @@ body {
   font-weight: 300;
   line-height: 1.6;
 }
+
+.container {
+  display: grid;
+  grid-template-rows: 80vh min-content 40vw repeat(3, min-content); //to fit the content we use min-content or the default which is auto
+  //grid-template-columns: repeat(8, 1fr);// 1140/8 = 142.5 => 140 => 14rem
+  grid-template-columns: 8rem 1fr repeat(8, minmax(min-content, 14rem)) 1fr; // it should be adapt the view port but not less than the min-content then the min is min-content and max is 14 rem
+  // to center the 8 columns we add 1fr and 1fr before and after them
+}
