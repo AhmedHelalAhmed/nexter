@@ -5,8 +5,9 @@
   margin: 15rem 0;
 
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  //grid-template-columns: repeat(3, 1fr);
   //grid-template-rows: auto auto;// not needed it's the default
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr)); // the width of the track should stay between 25rem and 1fr
   grid-gap: 6rem;
   align-items: start;
 }
