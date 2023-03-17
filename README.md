@@ -1,4 +1,7 @@
-## Nexter
+## [Nexter](https://ahmedhelalahmed.github.io/nexter)
+
+Simple project to apply grid layouts 
+
 ## Technologies
 - HTML5
 - SASS (scss)
